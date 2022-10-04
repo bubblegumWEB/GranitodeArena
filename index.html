@@ -11,13 +11,48 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="sass/estilos.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/sdp7jli.css" />
+
     <title>Document</title>
   </head>
   <body>
-    <!-- RECURSOS -->
-    <main>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 HEADER                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <header class="header">
       <div class="container">
-        <h1 class="text-white">hola</h1>
+        <div class="d-flex justify-content-between">
+          <div class="header__logo">
+            <a href="index.html"
+              ><img src="img/Logo-Mi-Granito-de-Arena-red.png" alt=""
+            /></a>
+          </div>
+          <div class="header__menu">
+            <nav>
+              <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="#quieroserpart">Quiero ser parte</a></li>
+                <li><a href="#preguntasfrecuentes">Preguntas frecuentes</a></li>
+                <li><a href="#nuestrosaliados">Nuestros Aliados</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                  MAIN                                   -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <main class="main">
+      <!-- TU APORTE -->
+
+      <div class="main__tuaporte">
+        <div class="main__tuaporte-titulo">
+          <img src="img/titulo-tuaporte.png" alt="Tu aporte" />
+        </div>
       </div>
     </main>
     <script
@@ -38,6 +73,7 @@
     <script src="js/TimelineLite.min.js"></script>
     <script src="js/TweenLite.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/parallax.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

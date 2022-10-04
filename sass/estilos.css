@@ -1,5 +1,55 @@
+@import url(../css/generales.css);
 body {
-  background-color: #000;
+  /* -------------------------------------------------------------------------- */
+  /*                                   HEADER                                   */
+  /* -------------------------------------------------------------------------- */
+  /* -------------------------------------------------------------------------- */
+  /*                                    MAIN                                    */
+  /* -------------------------------------------------------------------------- */
+  /* -------------------------------- Tu aporte ------------------------------- */
+}
+body h4,
+body nav ul li a {
+  font-family: var(--font-subtitle);
+}
+body p {
+  font-family: var(--font-text);
+}
+body .header {
+  padding: 5rem 0;
+}
+body .header__logo img {
+  height: 180px;
+  width: 100%;
+  object-fit: contain;
+}
+body .header__menu {
+  display: flex;
+  align-items: center;
+}
+body .header__menu nav ul {
+  display: flex;
+  padding-left: 0;
+}
+body .header__menu nav ul li {
+  list-style: none;
+  padding-right: 3.8rem;
+}
+body .header__menu nav ul li a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.5s;
+}
+body .header__menu nav ul li a:hover {
+  color: var(--primary);
+}
+body .main__tuaporte-titulo {
+  text-align: center;
+}
+body .main__tuaporte-titulo img {
+  max-width: 40vw;
+  width: 100%;
+  margin: auto;
 }
 
 /*# sourceMappingURL=estilos.css.map */
