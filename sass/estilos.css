@@ -42,12 +42,22 @@ body .header__menu nav ul {
 }
 body .header__menu nav ul li {
   list-style: none;
-  padding-right: 3.8rem;
+  padding: 0 0.75rem;
+}
+body .header__menu nav ul li:first-of-type a:after {
+  content: "";
 }
 body .header__menu nav ul li a {
   text-decoration: none;
   color: #000;
   transition: 0.5s;
+  position: relative;
+  padding-left: 0.75rem;
+}
+body .header__menu nav ul li a:after {
+  content: "|";
+  position: absolute;
+  left: -15px;
 }
 body .header__menu nav ul li a:hover {
   color: var(--primary);
