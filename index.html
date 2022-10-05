@@ -31,12 +31,15 @@
           <div class="header__menu">
             <nav>
               <ul>
-                <li><a href="/">Inicio</a></li>
-                <li><a href="#quieroserpart">Quiero ser parte</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#quieroserparte">Quiero ser parte</a></li>
                 <li><a href="#preguntasfrecuentes">Preguntas frecuentes</a></li>
                 <li><a href="#nuestrosaliados">Nuestros Aliados</a></li>
               </ul>
             </nav>
+          </div>
+          <div id="menuresponsive" class="header__sandwich">
+            <button><i class="fa-solid fa-bars"></i></button>
           </div>
         </div>
       </div>
@@ -66,6 +69,9 @@
             </div>
           </div>
         </div>
+        <div class="main__tuaporte-videoresponsive">
+          <img src="img/para-animacion.png" alt="paraanimacion" />
+        </div>
         <div class="main__tuaporte-seguirleyendo">
           <p>
             Mi Granito de Arena es un símbolo de orgullo mediante el cual la
@@ -76,15 +82,18 @@
       </div>
       <!-- QUIERO SER PARTE -->
       <div
+        id="quieroserparte"
         class="main__quieroserparte"
         style="background-image: url(img/fondo.jpg)"
       >
         <div class="d-flex">
           <img
+            onclick="location.href='https://www.paypal.com/donate/?hosted_button_id=8XBNWGLMZNRDU'"
             class="project-left"
             src="img/mano-donaciones-izq.png"
             alt="quiero ser parte"
           /><img
+            onclick="location.href='registratunegocio.html'"
             class="project-right"
             src="img/mano-donaciones-der.png"
             alt="quiero ser parte"
@@ -105,41 +114,64 @@
               <div class="main__soyunnegocio-content">
                 <h4>SOY UN NEGOCIO EN LA DIÁSPORA</h4>
                 <p>
-                  Puedes donar AQUÍ. Si quieres ser parte de la Red de Negocios
-                  Mi Granito de Arena en la diáspora, o te interesa otro tipo de
-                  alianza estratégica o intercambio publicitario, comunícate con
-                  nosotros en MiGranitoRD@gmail.com o Registra tu negocio AQUI .
+                  Puedes donar
+                  <a
+                    href="https://www.paypal.com/donate/?hosted_button_id=8XBNWGLMZNRDU"
+                    >AQUÍ</a
+                  >. Si quieres ser parte de la Red de Negocios Mi Granito de
+                  Arena en la diáspora, o te interesa otro tipo de alianza
+                  estratégica o intercambio publicitario, comunícate con
+                  nosotros en MiGranitoRD@gmail.com o Registra tu negocio
+                  <a href="registratunegocio.html">AQUÍ</a>.
                 </p>
               </div>
               <div class="main__soyunnegocio-content">
                 <h4>SOY UNA ASOCIACIÓN EN LA DIÁSPORA</h4>
                 <p>
-                  Puedes donar AQUÍ. Si quieres contactarnos para una alianza
-                  estratégica o intercambio publicitario, comunícate con
-                  nosotros en MiGranitoRD@gmail.com.
+                  Puedes donar
+                  <a
+                    href="https://www.paypal.com/donate/?hosted_button_id=8XBNWGLMZNRDU"
+                    >AQUÍ</a
+                  >. Si quieres contactarnos para una alianza estratégica o
+                  intercambio publicitario, comunícate con nosotros en
+                  MiGranitoRD@gmail.com.
                 </p>
               </div>
               <div class="main__soyunnegocio-content">
                 <h4>SOY UN NEGOCIO EN DOMINICANA</h4>
                 <p>
-                  Puedes donar AQUÍ. Si quieres contactarnos para una alianza
-                  estratégica o intercambio publicitario, comunícate con
-                  nosotros en MiGranitoRD@gmail.com o Registra tu negocio AQUI.
+                  Puedes donar
+                  <a
+                    href="https://www.paypal.com/donate/?hosted_button_id=8XBNWGLMZNRDU"
+                    >AQUÍ</a
+                  >. Si quieres contactarnos para una alianza estratégica o
+                  intercambio publicitario, comunícate con nosotros en
+                  MiGranitoRD@gmail.com o Registra tu negocio
+                  <a href="registratunegocio.html">AQUÍ</a>.
                 </p>
               </div>
               <div class="main__soyunnegocio-content">
                 <h4>SOY UN INDIVIDUO EN DOMINICANA</h4>
                 <p>
-                  Puedes donar AQUÍ. Si te interesa comunicarte con nosotros por
-                  cualquier razón, escríbenos a MiGranitoRD@gmail.com
+                  Puedes donar
+                  <a
+                    href="https://www.paypal.com/donate/?hosted_button_id=8XBNWGLMZNRDU"
+                    >AQUÍ</a
+                  >. Si te interesa comunicarte con nosotros por cualquier
+                  razón, escríbenos a MiGranitoRD@gmail.com
                 </p>
               </div>
               <div class="main__soyunnegocio-content">
                 <h4>SOY UN INDIVIDUO EN LA DIÁSPORA</h4>
                 <p>
-                  Puedes donar AQUÍ o con tu compra en ESTOS negocios. Si te
-                  interesa comunicarte con nosotros por cualquier razón,
-                  escríbenos a MiGranitoRD@gmail.com
+                  Puedes donar
+                  <a
+                    href="https://www.paypal.com/donate/?hosted_button_id=8XBNWGLMZNRDU"
+                    >AQUÍ</a
+                  >
+                  o con tu compra en ESTOS negocios. Si te interesa comunicarte
+                  con nosotros por cualquier razón, escríbenos a
+                  MiGranitoRD@gmail.com
                 </p>
               </div>
             </div>
@@ -153,6 +185,7 @@
       </div>
       <!-- PREGUNTAS FRECUENTES -->
       <div
+        id="preguntasfrecuentes"
         class="main__preguntasfrecuentes"
         style="background-image: url(img/fondo.jpg)"
       >
@@ -169,7 +202,7 @@
                   <h4>¿Puedo donar al programa en este website?</h4>
                   <p>
                     ¡Claro que sí! Tenemos una opción de donar en este website,
-                    AQUÍ.
+                    <a href="registratunegocio.html">AQUÍ</a>.
                   </p>
                 </div>
                 <div class="main__preguntasfrecuentes-content">
@@ -201,7 +234,7 @@
                   Diaspora & Development Foundation se reserva el derecho de
                   selección de las entidades beneficiarias. Si quieres conocer
                   el proceso de selección y los criterios utilizados, entra
-                  AQUÍ.
+                  <a href="registratunegocio.html">AQUÍ</a>.
                 </p>
               </div>
               <div class="main__preguntasfrecuentes-content">
@@ -223,22 +256,40 @@
                   Soy dominicano en la diáspora y tengo un negocio, ¿cómo me uno
                   a la red Diáspora Dominicana?
                 </h4>
-                <p>Registra tu negocio AQUÍ y te contactaremos.</p>
+                <p>
+                  Registra tu negocio
+                  <a href="registratunegocio.html">AQUÍ</a> y te contactaremos.
+                </p>
               </div>
               <div class="main__preguntasfrecuentes-content">
                 <h4>
                   Soy propietario de un negocio en República Dominicana, y me
                   quiero unir a la red de aliados Mi Granito de Arena.
                 </h4>
-                <p>Registra tu negocio AQUÍ y te contactaremos.</p>
+                <p>
+                  Registra tu negocio
+                  <a href="registratunegocio.html">AQUÍ</a> y te contactaremos.
+                </p>
               </div>
               <div class="main__preguntasfrecuentes-content">
                 <h4>No soy dominicano pero quiero aportar</h4>
-                <p>Puedes donar AQUÍ.</p>
+                <p>
+                  Puedes donar
+                  <a
+                    href="https://www.paypal.com/donate/?hosted_button_id=8XBNWGLMZNRDU"
+                    >AQUÍ</a
+                  >.
+                </p>
               </div>
               <div class="main__preguntasfrecuentes-content">
                 <h4>Vivo en República Dominicana pero quiero aportar</h4>
-                <p>Puedes donar AQUÍ.</p>
+                <p>
+                  Puedes donar
+                  <a
+                    href="https://www.paypal.com/donate/?hosted_button_id=8XBNWGLMZNRDU"
+                    >AQUÍ</a
+                  >.
+                </p>
               </div>
             </div>
           </div>
@@ -246,6 +297,7 @@
       </div>
       <!-- -------------------------- NUESTROS ALIADOS --------------------------- -->
       <div
+        id="nuestrosaliados"
         class="main__nuestrosaliados"
         style="background-image: url(img/fondo.jpg)"
       >

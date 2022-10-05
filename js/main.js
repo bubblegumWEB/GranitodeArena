@@ -1,4 +1,10 @@
 
+const menuresponsive = document.getElementById("menuresponsive");
+const menusticky = document.querySelector(".header__menu");
+
+menuresponsive.addEventListener("click", () => {
+   menusticky.classList.toggle("activo");
+})
 
 // VIDEO
 
