@@ -93,6 +93,7 @@ body .main__tuaporte-seguirleyendo {
 }
 body .main__tuaporte-seguirleyendo p {
   font-size: 1.1rem;
+  font-family: var(--font-text);
 }
 body .main__tuaporte-seguirleyendo img {
   max-width: 20vw;
