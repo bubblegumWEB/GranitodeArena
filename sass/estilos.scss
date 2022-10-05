@@ -209,6 +209,31 @@ body {
         }
       }
     }
+
+    /* -------------------------------------------------------------------------- */
+    /*                             REGISTRA TU NEGOCIO                            */
+    /* -------------------------------------------------------------------------- */
+
+    &__registratunegocio {
+      padding: 5rem 0 0 0;
+      &-title {
+        max-width: 60vw;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+        }
+      }
+      &-formulario {
+        img {
+          width: 100%;
+          margin: auto;
+        }
+      }
+    }
   }
 
   /* -------------------------------------------------------------------------- */
