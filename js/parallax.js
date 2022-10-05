@@ -1,4 +1,4 @@
-
+var controller = new ScrollMagic.Controller();
 // SCROLL PARALLAX
 
 jQuery(".project").each(function () {
@@ -32,7 +32,7 @@ jQuery(".project").each(function () {
   jQuery(".project-left").each(function () {
     var ourScenedos = new ScrollMagic.Scene({
       triggerElement: this,
-      triggerHook: 1,
+      triggerHook: 0.5,
     })
       .setClassToggle(this, "fade-left")
       .addTo(controller);
@@ -48,8 +48,8 @@ jQuery(".project").each(function () {
   
   jQuery(".project-right").each(function () {
     var ourScenetres = new ScrollMagic.Scene({
-      triggerElement: this.children[0],
-      triggerHook: 0.65,
+      triggerElement: this,
+      triggerHook: 0.5,
     })
       .setClassToggle(this, "fade-right")
       .addTo(controller);

@@ -7,7 +7,8 @@ body {
   }
 
   p {
-    font-family: var(--font-text);
+    font-weight: normal;
+    font-style: normal;
   }
 
   /* -------------------------------------------------------------------------- */
@@ -55,12 +56,113 @@ body {
 
   .main {
     &__tuaporte {
+      position: relative;
       &-titulo {
         text-align: center;
         img {
           max-width: 40vw;
           width: 100%;
           margin: auto;
+        }
+      }
+      .app {
+        video {
+          width: 100%;
+          height: 850px;
+          object-fit: cover;
+        }
+      }
+      &-seguirleyendo {
+        text-align: center;
+        max-width: 40vw;
+        margin: auto;
+        width: 100%;
+        p {
+          font-size: 1.1rem;
+        }
+        img {
+          max-width: 20vw;
+          width: 100%;
+          margin: auto;
+        }
+      }
+    }
+
+    /* ---------------------------- QUIERO SER PARTE ---------------------------- */
+
+    &__quieroserparte {
+      padding: 7rem 0 0 0;
+      position: relative;
+      img {
+        width: 50%;
+        cursor: pointer;
+      }
+      &-imagen {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        max-width: 60vw;
+        transform: translateX(-40px);
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+
+    /* ----------------------------- SOY UN NEGOCIO ----------------------------- */
+
+    &__soyunnegocio {
+      padding: 4rem 0;
+      &-content {
+        padding: 1rem 0;
+        width: 90%;
+        margin: auto;
+        h4 {
+          font-family: var(--font-subtitle);
+          color: var(--primary);
+          font-weight: bold;
+          padding-bottom: 0.5rem;
+          text-transform: uppercase;
+        }
+        p {
+          font-family: var(--font-text);
+          font-size: 1rem;
+        }
+        &:first-of-type {
+          padding-top: 0;
+        }
+        &:last-of-type {
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    /* -------------------------- PREGUNTAS FRECUENTES -------------------------- */
+
+    &__preguntasfrecuentes {
+      &-image {
+        img {
+          width: 100%;
+        }
+      }
+      &-content {
+        padding: 0rem 0;
+        width: 90%;
+        margin: auto;
+        h4 {
+          font-family: var(--font-subtitle);
+          color: var(--secundary);
+          font-weight: bold;
+          padding-bottom: 0.5rem;
+          text-transform: uppercase;
+        }
+        p {
+          font-family: var(--font-text);
+          font-size: 1rem;
+        }
+        &:last-of-type {
+          padding-bottom: 0;
         }
       }
     }
