@@ -1,3 +1,5 @@
+
+
 // VIDEO
 
 const registerVideo = (bound, video) => {
@@ -5,11 +7,11 @@ const registerVideo = (bound, video) => {
 	video = document.querySelector(video);
 	const scrollVideo = ()=>{
 		if(video.duration) {
-			const distanceFromTop = window.scrollY + bound.getBoundingClientRect().top;
+			const distanceFromTop = window.scrollY + bound.getBoundingClientRect().top - 100;
 			const rawPercentScrolled = (window.scrollY - distanceFromTop) / (bound.scrollHeight - window.innerHeight);
-			const percentScrolled = Math.min(Math.max(rawPercentScrolled, 0), 1);
+			const percentScrolled = Math.min(Math.max(rawPercentScrolled, 0), 1.8);
 			
-			video.currentTime = video.duration * percentScrolled;
+			video.currentTime = video.duration * percentScrolled / 3;
 		}
 		requestAnimationFrame(scrollVideo);
 	}

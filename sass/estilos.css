@@ -1,5 +1,6 @@
 @import url(../css/generales.css);
 body {
+  overflow-x: hidden;
   /* -------------------------------------------------------------------------- */
   /*                                   HEADER                                   */
   /* -------------------------------------------------------------------------- */
@@ -7,6 +8,9 @@ body {
   /*                                    MAIN                                    */
   /* -------------------------------------------------------------------------- */
   /* -------------------------------- Tu aporte ------------------------------- */
+  /* -------------------------------------------------------------------------- */
+  /*                                   FOOTER                                   */
+  /* -------------------------------------------------------------------------- */
 }
 body h4,
 body nav ul li a {
@@ -15,6 +19,7 @@ body nav ul li a {
 body p {
   font-weight: normal;
   font-style: normal;
+  margin-bottom: 0;
 }
 body .header {
   padding: 5rem 0;
@@ -48,12 +53,15 @@ body .main {
   /* ---------------------------- QUIERO SER PARTE ---------------------------- */
   /* ----------------------------- SOY UN NEGOCIO ----------------------------- */
   /* -------------------------- PREGUNTAS FRECUENTES -------------------------- */
+  /* ---------------------------- NUESTROS ALIADOS ---------------------------- */
 }
 body .main__tuaporte {
   position: relative;
 }
 body .main__tuaporte-titulo {
   text-align: center;
+  z-index: 5;
+  position: relative;
 }
 body .main__tuaporte-titulo img {
   max-width: 40vw;
@@ -64,8 +72,11 @@ body .main__tuaporte .app video {
   width: 100%;
   height: 850px;
   object-fit: cover;
+  z-index: 2;
+  position: relative;
 }
 body .main__tuaporte-seguirleyendo {
+  padding: 2rem;
   text-align: center;
   max-width: 40vw;
   margin: auto;
@@ -123,11 +134,23 @@ body .main__soyunnegocio-content:first-of-type {
 body .main__soyunnegocio-content:last-of-type {
   padding-bottom: 0;
 }
+body .main__soyunnegocio-image {
+  display: flex;
+  justify-content: flex-end;
+}
+body .main__soyunnegocio-image img {
+  width: 100%;
+  height: 650px;
+  object-fit: contain;
+}
+body .main__preguntasfrecuentes {
+  padding: 5rem 0;
+}
 body .main__preguntasfrecuentes-image img {
   width: 100%;
 }
 body .main__preguntasfrecuentes-content {
-  padding: 0rem 0;
+  padding: 0.4rem 0;
   width: 90%;
   margin: auto;
 }
@@ -144,6 +167,64 @@ body .main__preguntasfrecuentes-content p {
 }
 body .main__preguntasfrecuentes-content:last-of-type {
   padding-bottom: 0;
+}
+body .main__nuestrosaliados {
+  padding: 5rem 0;
+}
+body .main__nuestrosaliados-title {
+  text-align: center;
+}
+body .main__nuestrosaliados-title img {
+  width: 100%;
+  max-width: 40vw;
+  width: 100%;
+  margin: auto;
+}
+body .main__nuestrosaliados-grid {
+  max-width: 60vw;
+  margin: auto;
+  width: 100%;
+  padding: 3rem 0;
+}
+body .main__nuestrosaliados-grid img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+body footer {
+  height: 140vh;
+  background-size: cover;
+  position: relative;
+}
+body footer .aportar {
+  transform: translateY(150px);
+}
+body footer .aportar img {
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+}
+body footer .agua {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+body footer .copyright {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+body footer .copyright .container {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+body footer .copyright i {
+  color: red;
+}
+body footer .copyright a {
+  color: #000;
 }
 
 /*# sourceMappingURL=estilos.css.map */
